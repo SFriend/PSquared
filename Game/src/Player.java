@@ -1,5 +1,5 @@
 /**
  * Created by peter on 16.11.16.
  */
-public class Player {
+public class Player extends Entity {
 }

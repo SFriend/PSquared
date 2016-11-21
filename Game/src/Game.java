@@ -3,11 +3,12 @@
  */
 public class Game {
     public static void main(String[] args) {
-        Player player = new Player();
-        Enemy enemy = new Enemy();
-        Enemy enemy2 = new Enemy();
-        player.attack(enemy);
-        System.out.println(player.getHitPoints());
-        System.out.println(enemy.getHitPoints());
+        Player player = new Player("Peter1", 5);
+        Enemy enemy = new Enemy("Player2", 1);
+        while (enemy.isAlice()) {
+            player.attack(enemy);
+        }
+        player.printStats();
+        enemy.printStats();
     }
 }
